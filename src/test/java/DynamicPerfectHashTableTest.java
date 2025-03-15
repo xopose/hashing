@@ -35,7 +35,7 @@ public class DynamicPerfectHashTableTest {
 
         int count = 0;
         for (String value : testData) {
-            if (count % 2 == 0) {  // Удаляем половину элементов
+            if (count % 2 == 0) {
                 hashTable.remove(value);
             }
             count++;

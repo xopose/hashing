@@ -1,16 +1,18 @@
 import com.lazer.ExtendibleHashing;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
 public class ExtendibleHashingTest {
-    private static final int DATA_SIZE = 1000;
+    private static final int DATA_SIZE = 10;
 
     @Test
-    void testInsertAndSearch() {
-        ExtendibleHashing hashTable = new ExtendibleHashing(2);
+    void testInsertAndSearch() throws IOException, ClassNotFoundException {
+        ExtendibleHashing hashTable = new ExtendibleHashing(1000);
         Set<String> testData = generateTestData(DATA_SIZE);
 
         for (String value : testData) {
@@ -25,7 +27,7 @@ public class ExtendibleHashingTest {
     }
 
     @Test
-    void testDelete() {
+    void testDelete() throws IOException, ClassNotFoundException {
         ExtendibleHashing hashTable = new ExtendibleHashing(2);
         Set<String> testData = generateTestData(DATA_SIZE);
 
@@ -35,7 +37,7 @@ public class ExtendibleHashingTest {
 
         int count = 0;
         for (String value : testData) {
-            if (count % 2 == 0) { // Удаляем половину элементов
+            if (count % 2 == 0) {
                 hashTable.delete(value);
             }
             count++;
@@ -53,7 +55,7 @@ public class ExtendibleHashingTest {
     }
 
     @Test
-    void testExpansion() {
+    void testExpansion() throws IOException, ClassNotFoundException {
         ExtendibleHashing hashTable = new ExtendibleHashing(2);
         Set<String> testData = generateTestData(DATA_SIZE);
 

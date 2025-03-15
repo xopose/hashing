@@ -12,19 +12,19 @@ public class Main {
 //        hashTable.insert("40");
 //        hashTable.insert("52");
 //
-//        System.out.println(hashTable.contains("10")); // true
-//        System.out.println(hashTable.contains("22")); // true
-//        System.out.println(hashTable.contains("37")); // true
-//        System.out.println(hashTable.contains("40")); // true
-//        System.out.println(hashTable.contains("52")); // true
+//        System.out.println(hashTable.contains("10"));
+//        System.out.println(hashTable.contains("22"));
+//        System.out.println(hashTable.contains("37"));
+//        System.out.println(hashTable.contains("40"));
+//        System.out.println(hashTable.contains("52"));
 //
-//        System.out.println(hashTable.contains("85")); // false
+//        System.out.println(hashTable.contains("85"));
 //
 //        hashTable.remove("40");
-//        System.out.println(hashTable.contains("40")); // false
+//        System.out.println(hashTable.contains("40"));
 //
 //        hashTable.insert("85");
-//        System.out.println(hashTable.contains("85")); // true
+//        System.out.println(hashTable.contains("85"));
 
 
 //        ExtendibleHashing hashTable = new ExtendibleHashing(2);
