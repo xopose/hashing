@@ -1,0 +1,12 @@
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                       Mode  Cnt         Score         Error  Units
+BTreeBenchmark.benchmarkDelete  avgt   15         7,068 ±       0,727  ns/op
+BTreeBenchmark.benchmarkInsert  avgt   15         7,112 ±       0,082  ns/op
+BTreeBenchmark.benchmarkSearch  avgt   15         6,268 ±       0,073  ns/op
+
+Process finished with exit code 0

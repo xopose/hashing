@@ -1,0 +1,7 @@
+Benchmark                                           Mode  Cnt   Score   Error  Units
+ExtendibleHashingDiskBenchmark.benchmarkBulkDelete  avgt    5   0,051 ± 0,022   s/op
+ExtendibleHashingDiskBenchmark.benchmarkBulkTInsert  avgt    5  11,088 ± 2,730   s/op
+ExtendibleHashingDiskBenchmark.benchmarkBulkTTInsert  avgt    5  23,088 ± 3,043   s/op
+ExtendibleHashingDiskBenchmark.benchmarkBulkSearch  avgt    5   0,007 ± 0,001   s/op
+
+Process finished with exit code 0
