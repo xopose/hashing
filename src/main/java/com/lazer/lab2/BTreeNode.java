@@ -5,9 +5,9 @@ import java.util.List;
 
 public class BTreeNode {
     int t;
-    List<Integer> keys;
-    List<BTreeNode> children;
-    boolean leaf;
+    public List<Integer> keys;
+    public List<BTreeNode> children;
+    public boolean leaf;
 
     BTreeNode(int t, boolean leaf) {
         this.t = t;

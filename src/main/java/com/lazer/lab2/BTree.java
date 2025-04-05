@@ -66,18 +66,25 @@ public class BTree {
     private void splitChild(BTreeNode parent, int i, BTreeNode y) {
         BTreeNode z = new BTreeNode(y.t, y.leaf);
 
+        int median = y.keys.get(t - 1);
+
         for (int j = 0; j < t - 1; j++) {
-            z.keys.add(y.keys.remove(t));
+            z.keys.add(y.keys.get(t + j));
+        }
+
+        for (int j = 0; j < t; j++) {
+            y.keys.remove(y.keys.size() - 1);
         }
 
         if (!y.leaf) {
             for (int j = 0; j < t; j++) {
-                z.children.add(y.children.remove(t));
+                z.children.add(y.children.get(t));
+                y.children.remove(t);
             }
         }
 
         parent.children.add(i + 1, z);
-        parent.keys.add(i, y.keys.remove(t - 1));
+        parent.keys.add(i, median);
     }
 
     public void delete(int key) {
