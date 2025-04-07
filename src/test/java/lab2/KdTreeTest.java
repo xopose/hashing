@@ -33,7 +33,7 @@ public class KdTreeTest {
         Point target = new Point(10, 10);
         Point nearest = tree.findNearest(target);
         assertNotNull(nearest);
-        assertEquals("(9, 1)", nearest.toString(), "Nearest point should be (9, 1)");
+        assertEquals("(13, 15)", nearest.toString(), "Nearest point should be (13, 15)");
     }
 
     @Test
