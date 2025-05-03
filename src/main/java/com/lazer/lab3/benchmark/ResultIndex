@@ -1,0 +1,9 @@
+Benchmark                                                       Mode  Cnt  Score    Error   Units
+IndexBenchmark.indexFiveHundredRows      thrpt   20  0,029 ±  0,002  ops/ms
+IndexBenchmark.indexFiveThousandRows     thrpt   20  0,004 ±  0,001  ops/ms
+IndexBenchmark.indexOneHundredRows       thrpt   20  0,061 ±  0,004  ops/ms
+IndexBenchmark.indexOneRow               thrpt   20  0,075 ±  0,007  ops/ms
+IndexBenchmark.indexTenThousandRows      thrpt   20  0,005 ±  0,001  ops/ms
+IndexBenchmark.indexThousandRows         thrpt   20  0,023 ±  0,002  ops/ms
+
+Process finished with exit code 0

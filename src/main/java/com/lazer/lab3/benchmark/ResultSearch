@@ -1,0 +1,13 @@
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                             Mode  Cnt  Score   Error   Units
+SearchBenchmark.searchFiveHundredRows      thrpt   20  0,284 ± 0,09  ops/ms
+SearchBenchmark.searchFiveThousandRows     thrpt   20  0,253 ± 0,09  ops/ms
+SearchBenchmark.searchOneHundredRows       thrpt   20  0,133 ± 0,07  ops/ms
+SearchBenchmark.searchOneRow               thrpt   20  0,109 ± 0,05  ops/ms
+SearchBenchmark.searchTenThousandRows      thrpt   20  0,266 ± 0,05  ops/ms
+SearchBenchmark.searchThousandRows         thrpt   20  0,217 ± 0,03  ops/ms
+
+Process finished with exit code 0
