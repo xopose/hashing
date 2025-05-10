@@ -61,7 +61,7 @@ public class SearchBenchmark {
         @Measurement(iterations = 10, time = 1)
         @Fork(value = 2, warmups = 1)
         public void luceneSearchWithOneHundredRows(Blackhole blackhole) {
-            var result = search.search(new SearchRequest("winner:\"white\""));
+            var result = search.search(new SearchRequest("winner:\"black\""));
             blackhole.consume(result);
         }
 
@@ -83,7 +83,7 @@ public class SearchBenchmark {
         @Measurement(iterations = 10, time = 1)
         @Fork(value = 2, warmups = 1)
         public void luceneSearchWithThousandRows(Blackhole blackhole) {
-            var result = search.search(new SearchRequest("winner:\"white\""));
+            var result = search.search(new SearchRequest("winner:\"black\""));
             blackhole.consume(result);
         }
 
@@ -105,7 +105,7 @@ public class SearchBenchmark {
         @Measurement(iterations = 10, time = 1)
         @Fork(value = 2, warmups = 1)
         public void luceneSearchWithTenThousandRows(Blackhole blackhole) {
-            var result = search.search(new SearchRequest("winner:\"white\""));
+            var result = search.search(new SearchRequest("winner:\"black\""));
             blackhole.consume(result);
         }
 

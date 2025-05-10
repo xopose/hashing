@@ -74,7 +74,7 @@ public class Search {
     }
 
     private void index() throws IOException {
-        index(16_000);
+        index(10_000);
     }
 
     private void index(int rowNumber) throws IOException {
